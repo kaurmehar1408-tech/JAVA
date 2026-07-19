@@ -224,3 +224,111 @@ import java.util.*;
 //         }
 //     }
 // }
+
+// public class result{
+//     public static int calculateTotal(int mark1, int mark2, int mark3, int mark4, int mark5){
+//         return mark1 + mark2 + mark3 + mark4 + mark5;
+//     }
+//     public static double calculatePercentage(int total){
+//         return ((double)total/500.0)*100;
+//     }
+//     public static boolean isPassed(double percentage){
+//         if(percentage > 33){
+//             return true;
+//         }
+//         else{
+//             return false;
+//         }
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int mark1, mark2, mark3, mark4, mark5;
+//         System.out.print("Enter marks for subject1: ");
+//         mark1 = sc.nextInt();
+//         System.out.print("Enter marks for subject2: ");
+//         mark2 = sc.nextInt();
+//         System.out.print("Enter marks for subject3: ");
+//         mark3 = sc.nextInt();
+//         System.out.print("Enter marks for subject4: ");
+//         mark4 = sc.nextInt();
+//         System.out.print("Enter marks for subject5: ");
+//         mark5 = sc.nextInt();
+
+//         System.out.println("STUDENT RESULT");
+//         int total = calculateTotal(mark1,mark2,mark3,mark4,mark5);
+//         System.out.println("Total: "+ total);
+//         double per = calculatePercentage(total);
+//         System.out.printf("Percentage: %.2f%%%n",per);
+//         if(isPassed(per)){
+//             System.out.println("Status: PASS");
+//         }
+//         else{
+//             System.out.println("Status: FAIL");
+//         }
+//         sc.close();
+//     }
+// }
+
+// public class loanestimate{
+//     public static int calculateInterest(int principalamount, int interest, int loanperiod){
+//         return (principalamount*interest*loanperiod)/100;
+//     }
+//     public static int calculateTotalPayable(int principalamount, int interest){
+//         return principalamount + interest;
+//     }
+//     public static int calculateMonthlyInstallment(int totalpayable, int months){
+//         return totalpayable/months;
+//     } 
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter the principal amount: ");
+//         int principalamount = sc.nextInt();
+//         System.out.print("Enter annual interest rate: ");
+//         int interest = sc.nextInt();
+//         System.out.print("Enter Loan period in years: ");
+//         int loanperiod = sc.nextInt();
+//         System.out.print("Enter number of months: ");
+//         int months = sc.nextInt();
+
+//         int finalinterest = calculateInterest(principalamount, interest, loanperiod);
+//         int totalpayable = calculateTotalPayable(principalamount, finalinterest);
+//         int monthlyinstallment = calculateMonthlyInstallment(totalpayable,months);
+//         System.out.println("LOAN ESTIMATE");
+//         System.out.println("Simple Interest: Rs. "+ finalinterest);
+//         System.out.println("Total Payable: Rs. "+ totalpayable);
+//         System.out.println("Monthly Installment: Rs. "+ monthlyinstallment);
+//     }
+// }
+
+// public class fitnessreport{
+//     public static float calculateBMI(int weight, float height){
+//         return weight/(height*height);
+//     }
+//     public static String getBMICategory(float bmi){
+//         if(bmi < 18.5){
+//             return "Underweight";
+//         }
+//         else if(bmi >= 18.5 && bmi < 24.9){
+//             return "Normal";
+//         }
+//         else if(bmi >= 24.9 && bmi < 29.9){
+//             return "Overweight";
+//         }
+//         else{
+//             return "Obese";
+//         }
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter your weight in kg: ");
+//         int weight = sc.nextInt();
+//         System.out.println("Enter height in metres: ");
+//         float height = sc.nextFloat();
+//         float bmi = calculateBMI(weight, height);
+//         String category = getBMICategory(bmi);        System.out.println("FITNESS REPORT");
+//         System.out.printf("BMI: %.2f\n",bmi);
+//         System.out.println("Category: "+ category);
+//         System.out.println("Recommendation: Maintain regular exercise and balanced diet.");
+//     }
+
+// }
