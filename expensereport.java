@@ -332,3 +332,98 @@ import java.util.*;
 //     }
 
 // }
+
+// public class weeklyattendance{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int arr[] = new int[7];
+//         int num[] = new int[7];
+//         int present = 0;
+//         int absent = 0;
+//         for(int i=0;i<7;i++){
+//             System.out.print("Enter any number 0/1 only : ");
+//             num[i] = sc.nextInt();
+//             if(num[i] == 0 || num[i] == 1){
+//                 arr[i] = num[i];
+//             }
+//             else{
+//                 System.out.println("Please enter a number 0 or 1 only: ");
+//             }
+
+//         }
+//         for(int i=0;i<7;i++){
+//             if(arr[i]==1){
+//                 present++;
+//             }
+//             else{
+//                 absent++;
+//             }
+//         }
+//         double attendance = (present/7.0)*100;
+//         System.out.println("WEEKLY ATTENDANCE");
+//         System.out.println("Present Days: "+ present);
+//         System.out.println("Absent Days: "+ absent);
+//         System.out.printf("Attendance: %.2f%%%n", attendance);
+//     }
+// }
+
+// public class marksDashboard{
+//     public static void main(String[] args) {
+//     int total = 0;
+//     double average = 0;
+//     int passed = 0;
+//     int failed = 0;
+//         Scanner sc = new Scanner(System.in);
+//         int arr[] = new int[6];
+//         for(int i=1;i<=5;i++){
+//             System.out.print("Enter subject"+ i + " " + "marks: ");
+//             arr[i] =sc.nextInt();
+//         }
+//         for(int i=1;i<=5;i++){
+//             total += arr[i];
+//         }
+//         average = total/5.00;
+//         for(int i=1;i<=5;i++){
+//             if(arr[i]>40){
+//                 passed++;
+//             }
+//             else{
+//                 failed++;
+//             }
+//         }
+//         System.out.println("MARKS DASHBOARD");
+//         System.out.println("Total: "+ total);
+//         System.out.printf("Average: %.2f",average);
+//         System.out.println();
+//         System.out.println("Passed Subjects: "+ passed);
+//         System.out.println("Failed Subjects: "+ failed);
+//     }
+// }
+
+public class expensereport{
+    public static void main(String[] args) {
+        int total = 0;
+        double average = 0;
+        int daysabovebudget = 0;
+        Scanner sc = new Scanner(System.in);
+        int arr[] = new int[7];
+        for(int i=0;i<7;i++){
+            System.out.println("Enter day" + i + " "+ "spending: ");
+            arr[i] = sc.nextInt();
+        }
+        for(int i=0;i<7;i++){
+            total += arr[i];
+        }
+        average = total/7.00;
+        for(int i=0;i<7;i++){
+            if(arr[i] > 150){
+                daysabovebudget++;
+            }
+        }
+        System.out.println("EXPENSE REPORT");
+        System.out.println("Total Spending: Rs."+ total);
+        System.out.printf("Average Daily Spending: Rs.%.2f",average);
+        System.out.println();
+        System.out.println("Days above budget: "+ daysabovebudget);
+    }
+}
