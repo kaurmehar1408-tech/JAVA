@@ -4,7 +4,6 @@ public class replace {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a string: ");
         String str = sc.nextLine();
-
         for(int i=0;i<str.length();i++){
             str = str.replace('a','@');
         }

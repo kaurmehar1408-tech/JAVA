@@ -4,7 +4,6 @@ public class countcharacters{
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a string: ");
         String str = sc.nextLine();
-
         int letters = 0;
         int spaces = 0;
         for(int i=0;i<str.length();i++){

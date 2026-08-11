@@ -4,7 +4,6 @@ public class compresscharacters{
         Scanner sc  = new Scanner(System.in);
         System.out.print("Enter a string: ");
         String str = sc.nextLine();
-
         StringBuilder res = new StringBuilder();
         int count = 1;
         for(int i=0;i<str.length()-1;i++){

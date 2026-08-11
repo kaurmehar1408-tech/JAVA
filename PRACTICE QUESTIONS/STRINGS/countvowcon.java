@@ -5,17 +5,13 @@ public class countvowcon {
         Scanner sc= new Scanner(System.in);
         System.out.print("Enter a string: ");
         String str = sc.nextLine();
-
         int vowels = 0;
         int consonants = 0;
         int digits = 0;
         int special = 0;
-
         str = str.toLowerCase();
-
         for(int i=0;i<str.length();i++){
             char ch = str.charAt(i);
-
             if(Character.isDigit(ch)){
                 digits++;
             }
@@ -35,6 +31,5 @@ public class countvowcon {
         System.out.println("Consonants: "+consonants);
         System.out.println("Digits: "+ digits);
         System.out.println("Special: "+ special);
-
     }
 }

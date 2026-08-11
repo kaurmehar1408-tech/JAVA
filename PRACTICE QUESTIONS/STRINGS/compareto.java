@@ -6,9 +6,7 @@ public class compareto {
         String str1 = sc.nextLine();
         System.out.print("Enter string2: ");
         String str2 = sc.nextLine();
-
         int result = str1.compareTo(str2);
-
         if(result == 0){
             System.out.println("Strings are equal");
         }
