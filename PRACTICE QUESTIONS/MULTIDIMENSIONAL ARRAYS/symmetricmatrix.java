@@ -1,12 +1,12 @@
 import java.util.Scanner;
 public class symmetricmatrix {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in)
+        Scanner sc = new Scanner(System.in);
         int arr[][]=new int[3][3];
         System.out.println("Enter Matrix:");
         for(int i=0;i<3;i++)
             for(int j=0;j<3;j++)
-                arr[i][j]=sc.nextInt()
+                arr[i][j]=sc.nextInt();
         boolean symmetric=true;
         for(int i=0;i<3;i++){
             for(int j=0;j<3;j++){
